@@ -162,7 +162,7 @@ main .top .search-container .search .search-icon{
      } 
   
 }
-@media(max-width: 550px){
+@media(max-width: 500px){
   main .top .search-container .search input,
   .login-signup,
   .user-icon
@@ -184,5 +184,11 @@ main .top .search-container .search .search-icon{
     font-size: 2rem;
     text-align: center ;
 
+  }
+  main .top .search-container{
+    align-items: center;
+    overflow: hidden;
+    margin-left: -2rem;
+  
   }
 }

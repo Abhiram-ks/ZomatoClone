@@ -136,7 +136,7 @@ input[type="email"]{
 }
 
 
- @media(max-width: 550px){ 
+ @media(max-width: 500px){ 
     .app-section .phone-image{
       display: none;
     }

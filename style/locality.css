@@ -91,7 +91,7 @@
         font-size: 1.4rem;
     }
 }
-@media(max-width: 550px){
+@media(max-width: 500px){
     .localities .heading-section{
         font-size: 1.9rem;
     }  

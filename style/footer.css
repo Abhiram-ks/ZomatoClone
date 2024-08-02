@@ -166,7 +166,7 @@ footer hr{
     
 }
 
-@media(max-width: 550px){ 
+@media(max-width: 500px){ 
     .top-section{
         flex-direction: column;
     }
