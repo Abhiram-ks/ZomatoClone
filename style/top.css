@@ -173,6 +173,7 @@ main .top .search-container .search .search-icon{
     margin-top: 50px ;
     height: 5.5rem ;
     width:29rem ;
+    align-items: center;
 
   }
 
