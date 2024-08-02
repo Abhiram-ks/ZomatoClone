@@ -185,6 +185,9 @@ main .top .search-container .search .search-icon{
     text-align: center ;
 
   }
+  .top .center-content{
+       margin-left: -2rem;
+  }
   main .top .search-container{
     align-items: center;
     overflow: hidden;
