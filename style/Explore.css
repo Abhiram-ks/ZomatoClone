@@ -1,0 +1,81 @@
+.explore-options{
+    max-width: 110rem;
+    width:100%;
+    margin: auto;
+    padding: 5.5rem 0;
+}
+.explore-heading{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0px 0px 2rem;
+    color: rgb(54, 54, 54);
+}
+.accordions-list{
+    display: flex;
+    flex-direction: column;
+}
+.accordion-title{
+    color: rgb(54, 54, 54);
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(211, 211, 211); 
+    margin-bottom: 2rem;
+    padding: 2rem 2.4rem;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+#down{
+    color: rgb(68, 68, 68);
+    font-size: 1px;
+}
+#down:active{
+    cursor: wait;
+}
+.accordion:hover{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.06);
+}
+.accordion:active{
+    cursor: wait;
+}
+.accordion-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.accordion-container i{
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+@media(max-width:  1025px){
+    .explore-options{
+        max-width: 110rem;
+        width:90%;
+    }
+    .explore-heading{
+        font-size: 2.5rem;
+        font-weight: 500;
+    } 
+    .accordion-title{
+        font-size:2rem;
+    }
+}
+
+@media(max-width: 550px){
+    .explore-options{
+        max-width: 110rem;
+        width:80%;
+    }
+    .explore-heading{
+        font-size: 2rem;
+        font-weight: 500;
+    } 
+    .accordion-title{
+        font-size: 1.6rem;
+    }
+}

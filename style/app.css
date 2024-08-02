@@ -1,0 +1,194 @@
+.app-section{
+    margin-top: 30px;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-section .app-content{
+    display: flex;
+    align-items: center;
+}
+.app-section .phone-image{
+    position: relative;
+    max-width: 100%;
+    width: 25rem;
+    height: 45rem;
+    overflow: hidden;
+}
+.app-section .phone-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.app-info{
+    margin-top: -30px;
+    margin-left: 40px;
+}
+.app-section  .app-heading{
+    color: rgb(28, 28, 28);
+    font-size: 4.4rem;
+    font-weight: 500;
+    margin: 0px 0px 1.5rem;
+    line-height: 5.6rem;
+}
+.app-section .app-discription{
+    font-size: inherit;
+    color: rgb(23, 23, 23);
+    font-size: 1.7rem;
+    font-weight: 300;
+    width: 100%;
+    margin: 0px 0px 2.5px;
+    line-height: 3.2rem;
+}
+input[type="radio"]{
+    accent-color: rgb(239, 79, 95);
+    width: 20px;
+    height: 20px;
+   /* margin-right: 10px;*/
+}
+.app-options{
+    margin-top: 19px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 35%;
+}
+.app-option{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 1.6rem;
+    height: 4rem;
+    font-weight: 200;
+}
+.email-input{
+    display: flex;
+    margin-bottom: 2.5rem;
+    gap: 10px;
+}
+input[type="email"]{
+    padding: 1.3rem 1.2rem;
+    height: 4.8rem;
+    background: white;
+    border: 0.1rem solid rgb(207, 207, 207);
+    font-size: 1.8rem;
+    width: 60%;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: rgb(28, 28, 28);
+    font-weight: 200;
+}
+
+    input[type="email"]:active {
+    border-color: blue;
+}
+.email-input .share-1{
+    display: block;
+}
+.email-input .share-2{
+    display: none;
+}
+.email-input button{
+   background-color: rgb(239, 79, 95);
+   color: white;
+   border: none;
+   min-width: 15rem;
+   min-width: 15rem;
+   border-radius: 6px;
+   font-size: 1.6rem;
+   padding: 0 1.6rem;
+   cursor: pointer;
+   transition: 0.5s all;
+}
+.email-input button:hover{
+    background-color: rgb(207, 0, 0);
+}
+.store-discription{
+    line-height: 1.5;
+    margin: 0px 0px 1.5rem;
+    font-size: 1.4rem;
+    color: rgb(156, 156, 156);
+}
+.store-buttons{
+    gap: 2rem;
+}
+.store-buttons img{
+    object-fit: cover;
+    max-width: 100%;
+    width: 13.7rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px){
+    .app-section  .app-heading{
+        font-size: 3.5rem;
+    }
+    .app-section .app-discription{
+        font-size: 1.6rem;
+        margin-top: -8px;
+        line-height: 2.2rem;
+        margin-right: 140px;
+    }
+ 
+}
+
+
+ @media(max-width: 550px){ 
+    .app-section .phone-image{
+      display: none;
+    }
+    .app-info{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .app-section  .app-heading{
+        font-size: 2.8rem;
+    }
+    .app-section .app-discription{
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: -15px;
+        line-height: 2.2rem;
+        margin-right: 140px;
+    }
+    .email-input .share-1{
+        display:none;
+    }
+    .email-input .share-2{
+        display:block;
+    }
+    .email-input button{
+        min-width: 6rem;
+        min-width: 6rem;
+        font-size: 1.4rem;
+     }
+     input[type="radio"]{
+        width: 15px;
+        height: 20px;
+    }
+    .app-options{
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .app-option{
+        font-size: 1.5rem;
+    }
+    .store-discription{
+      margin-right: 180px;
+    }
+    .store-buttons img{
+        max-width: 100%;
+        width: 11.7rem;
+        height: 3.5rem;
+        border-radius: 5px;
+    }
+    
+}
+
+
+
+
+    

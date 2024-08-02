@@ -1,0 +1,109 @@
+.localities .heading-section{
+    color:black;
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+.localities .heading-section .city{
+    font-weight: 400;
+}
+.localities-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 108%;
+    margin-bottom: 10rem;
+}
+.locality{
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.9rem;
+    background-color: white;
+    border: 1px solid rgb(232, 232, 232);
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.5s all;
+}
+.locality:hover{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.letf{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.locality-title{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0px 0px 0.5px;
+    margin-bottom:5px ;
+    color: rgb(28, 28, 28);
+}
+.locality .places{
+    font-size: inherit;
+    margin: 0px;
+    color: rgb(54, 54, 54);
+    font-weight: 300;
+}
+.locality .center{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30%;
+    font-size: 1.8rem;
+    color: rgb(28, 28, 28);
+    height: 100%;
+    font-weight: 400;
+}
+.locality .center .down{
+    font-size:1px;
+    color: rgb(133, 132, 132);
+    font-weight: 300;
+}
+
+@media(max-width:  1025px){
+    .localities .heading-section{
+        margin-top: -.6rem;
+        font-size: 2.6rem;
+    }
+    .localities-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .locality{
+        align-items: center;
+        width: 90%;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .locality-title{
+        font-size:1.8rem;
+    }
+    .locality .places{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width: 550px){
+    .localities .heading-section{
+        font-size: 1.9rem;
+    }  
+    .localities-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 110%;
+    }
+    .locality-title{
+        font-size:1.6rem;
+    }
+    .locality .places{
+        font-size: 1.3rem;
+    }
+}

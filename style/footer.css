@@ -1,0 +1,220 @@
+footer{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-data{
+    width: 100%;
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4.8rem 0px 2.2rem;
+}
+.top-section{
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.top-section img{
+    height: 2.8rem;
+    width: 13.2rem;
+}
+.top-section .dropdown{
+    min-width: 10rem;
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.7rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    gap: 5px;
+    align-items: center;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+}
+.top-section .dropdown:active{
+    cursor: wait;
+}
+.top-section .dropdown img{
+    height: 3rem;
+    width: auto;
+}
+.dropdown-text{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+#icon1, #icon2{
+
+    font-size: 16px; 
+    width: 16px;    
+    height: 16px;    
+    color:rgb(81, 81, 81)
+}
+#icon1:hover, #icon2:hover{  
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+}
+.middle-section{
+    width: 100%;
+    justify-content: space-between;
+}
+.footer-links{
+    position: relative;
+    flex: 1;
+    max-width: 19.6666%;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-heading-6{
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px 0px 1.2rem;
+    width: 100%;
+}
+.footer-links ul li{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: rgb(105, 105, 105);
+    margin: 0.5rem 0px;
+    cursor: pointer;
+    width: 100%;
+}
+.footer-links ul li:hover{
+    color: rgb(35, 35, 35); 
+}
+.footer-links ul li:active{
+    cursor: wait;
+}
+.middle-section .socials{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    gap: 10px;
+}
+.socials li i{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.socials li i:active{
+    background-color: white;
+    color: black;
+}
+.footer-links .buttons img{
+    width: 13.7rem;
+    height: 4rem;
+}
+.middle-section .column{
+    gap: 20px;
+}
+.footer-links .buttons{
+    gap: 10px;
+}
+
+footer hr{
+    margin-top: 5rem;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+.end-section{
+    margin-top: 2.6rem;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    color: rgb(79, 79, 79);
+}
+.social-link-ladscape .footer-heading-6{
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+}
+
+
+@media(max-width: 1025px){
+    .top-section img{
+        text-overflow: ellipsis;
+        margin-left: 10px;
+    }
+    .middle-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .footer-links{
+        margin-bottom: 25px;
+         max-width: 200%;
+     }
+     .footer-heading-6{
+         font-size: 1.3rem;
+         width: 200%;
+     }
+     .end-section{
+        margin-left: 1rem;
+        line-height: 1.5rem;
+    }
+    
+}
+
+@media(max-width: 550px){ 
+    .top-section{
+        flex-direction: column;
+    }
+    .top-section img{
+        height: 2.3rem;
+        width: 12.2rem;
+        text-overflow: ellipsis;
+        margin-left: 200px;
+        margin-left: 6px;
+    }
+    
+        .top-section .dropdown{
+            min-width: 5rem;
+            max-width: 30%;
+            padding: 0.1rem 0.3rem;
+            margin-left: 10px;
+            margin-top: 5rem;
+        }
+        .top-section .dropdown img{
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+        .dropdown-text{
+            font-size: 1.4rem;
+        }
+        .middle-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            margin-left: 10px;
+        }
+        .footer-links{
+           margin-bottom: 25px;
+            max-width: 200%;
+        }
+        .footer-heading-6{
+            font-size: 1.3rem;
+            width: 200%;
+        }
+        .social-link-ladscape{
+            display: none;
+        }
+        .end-section{
+            margin-top: 2.6rem;
+            font-size: 1.1rem;
+            margin-left: 1rem;
+            line-height: 1.2rem;
+        }
+        
+ }
+

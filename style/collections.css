@@ -1,0 +1,138 @@
+.heading-2{
+    font-weight: 500;
+    font-size: 3.6rem;
+}
+.heading-6{
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+.collections-discription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.see-more{
+    font-weight: 300;
+    color: rgb(230, 68, 89);
+    font-size: 1.6rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.see-more-2{
+    font-weight: 400;
+    color: rgb(230, 68, 89);
+     display: none;
+}
+.collections-list{
+   display: flex;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 10rem;
+    gap: 10px;
+}
+.collection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 25%; 
+    height: 32rem;  
+}
+.image{
+     height: 32rem; 
+    /* height: fit-content; */
+    border-radius: 6px;
+}
+.image img{
+    max-width: 100%;
+}
+.overlayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.9rem;
+    background: linear-gradient(
+        0deg,
+        rgb(0, 0, 0, 0.9)0%,
+        rgb(0, 0, 0, 0.05)50%,
+        rgb(0, 0, 0, 0.05)85%
+    );
+}
+.overlayer-info{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.5;
+    padding: 0px 1.9rem;
+    font-size: 1.9rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.places{
+    font-size: 1.4rem;
+    margin: 0.2rem 0px 1rem;
+    display: flex;
+    align-items: center;
+}
+.heading-6{
+    font-size: 1.6rem;
+}
+
+
+
+@media(max-width: 1025px){
+.heading-2{
+    font-size: 2.8rem;
+    margin-top: -2rem;
+} 
+.see-more{
+    display: none; 
+}
+.see-more-2{
+    display: block;
+    font-size: 1.6rem;
+    margin-top: -9rem;
+    margin-bottom: 9rem;
+}
+.overlayer-info{
+    font-size: 1.6rem;
+}
+.places{
+    font-size: 1.3rem;
+} 
+
+}
+
+@media(max-width: 550px){
+    .heading-2{
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+        }
+        .heading-6{
+            font-size: 1.1rem;
+         }
+         .collections-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;    
+        }
+        .collection{
+            max-width: 100%; 
+            height: 32rem;   
+        }
+        .image{
+            width: 100%;
+            height: 350%; 
+            border-radius: 6px;
+        }
+        .overlayer-info{
+            font-size: 1.4rem;
+        }
+        .places{
+            font-size: 1.1rem;
+        } 
+}
+

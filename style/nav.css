@@ -1,0 +1,96 @@
+header{
+  width: 100%;
+  position: absolute;
+  
+}
+nav{
+  display: flex;
+  width: 80%;
+  font-weight: 500;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+  margin: auto;
+  user-select: none;
+  padding: 1.7rem 0px;
+  color: white;
+  cursor: pointer;
+}
+header nav .left-section  .nav-element a{
+  cursor: pointer;
+}
+
+nav .nav-element{
+  padding-bottom: 1rem;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+nav .nav-element a{
+  color: white;
+  font-size: 1.4rem;/* rem mean multiplay 10, 1.4rem x 10 = 14px*/
+  font-weight: 400px;
+
+}
+nav .right-section{
+  display: flex;
+}
+nav .right-section .nav-element a{
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 0.8rem;
+}
+.menu-icon{
+  font-size: 2rem;
+  width: 8rem;
+  height: 5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: rgb(255, 255, 255);
+  display: none;
+}
+.login-signup a{
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-left: 1.9rem;
+  height: 2.6rem;
+}
+.login-signup{
+         
+    display: flex;
+    flex-direction: row;
+    display: none;
+    margin-left: 20rem;
+  
+  
+}
+
+@media(max-width: 1024px){
+  .left-section, .right-section{
+    display: none !important;
+   }
+   .user-icon{
+    display: flex;
+    border-color: red;
+  }
+  .nav{
+    justify-content: flex-end;
+    padding: 0 1rem;
+    width: 100%;
+    height: 5.6rem;
+  }
+}
+
+@media(max-width: 550px){
+  .menu-icon{
+    display: flex;
+   }
+  
+}
